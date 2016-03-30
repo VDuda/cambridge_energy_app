@@ -76,9 +76,8 @@ function draw(data, current_user_amount) {
         .attr("height", function(d) { return height - y(d); });
 
     bar.append("text")
-      .attr("transform", "rotate(-90)")
       .attr("dy", "1em")
-      .attr("dx", "-0.25em")
+      .attr("dx", "7em")
       .style("text-anchor", "end")
       .style("fill", "blue")
       .text(function(d) { if(d == current_user_amount) { return "Your bill" }});
